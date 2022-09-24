@@ -13,6 +13,9 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
+      server: {
+        host: "0.0.0.0",
+      },
       manifest: {
         name: "Music App",
         theme_color: "#ff5e3a",
