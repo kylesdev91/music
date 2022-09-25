@@ -48,7 +48,7 @@
 
 <script>
 import { songsCollection } from "../includes/firebase";
-import AppSongItem from "../components/__tests__/SongItem.vue";
+import AppSongItem from "../components/base/SongItem.vue";
 import IconSecondary from "@/directives/icon-secondary";
 
 export default {

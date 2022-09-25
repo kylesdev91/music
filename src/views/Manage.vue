@@ -33,8 +33,8 @@
 
 <script>
 // import store from '@/store';
-import AppUpload from "../components/__tests__/Upload.vue";
-import CompositionItem from "../components/__tests__/CompositionItem.vue";
+import AppUpload from "../components/base/Upload.vue";
+import CompositionItem from "../components/base/CompositionItem.vue";
 import { songsCollection, auth } from "@/includes/firebase";
 
 export default {

@@ -12,12 +12,12 @@
   <auth />
 </template>
 <script>
-import AppHeader from "./components/__tests__/Header.vue";
-import Auth from "./components/__tests__/Auth.vue";
+import AppHeader from "./components/base/Header.vue";
+import Auth from "./components/base/Auth.vue";
 import { mapWritableState } from "pinia";
 import useUserStore from "@/stores/user";
 import { auth } from "./includes/firebase";
-import AppPlayer from "./components/__tests__/Player.vue";
+import AppPlayer from "./components/base/Player.vue";
 
 export default {
   name: "App",
