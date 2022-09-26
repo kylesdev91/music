@@ -1,7 +1,7 @@
 import About from "@/views/About.vue";
 import { mount } from "@vue/test-utils";
 
-import { describe, test, expect } from "vitest";
+import { describe, expect, test } from "vitest";
 
 describe("About.vue", () => {
   test("renders inner text", () => {
