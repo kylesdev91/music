@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import Home from "@views/Home.vue";
+import Home from "@/views/Home.vue";
 import SongItem from "@/components/base/SongItem.vue";
 import { describe, expect, test } from "vitest";
 
@@ -12,10 +12,19 @@ describe("Home.vue", () => {
           songs,
         };
       },
+      global: {
+        mocks: {
+          $t: (message) => message,
+        },
+      },
     });
 
     const items = component.findAllComponents(SongItem);
 
     expect(items).toHaveLength(songs.length);
+
+    items.forEach((wrapper, i) => {
+      expect(wrapper.props().song).toStrictEqual(songs[i]);
+    });
   });
 });
